@@ -4,7 +4,7 @@ export interface iGotlist {
     family: string;
     isDead: boolean;
 }
-export class GotModel {
+export class gotModel implements iGotlist {
     id: number;
     isDead: boolean;
     static generateId(): number {
@@ -12,6 +12,6 @@ export class GotModel {
     }
     constructor(public name: string, public family: string) {
         this.isDead = false;
-        this.id = GotModel.generateId();
+        this.id = gotModel.generateId();
     }
 }

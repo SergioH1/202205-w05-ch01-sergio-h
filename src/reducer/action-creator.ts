@@ -1,4 +1,6 @@
 import { createAction } from '@reduxjs/toolkit';
+
+import { gotModel } from '../models/got-model';
 import { actionTypes } from './action-types';
 
 export interface iAction {
@@ -6,15 +8,18 @@ export interface iAction {
     payload?: any;
 }
 
-export const loadGotActions = createAction(
+export const loadGotAction = createAction<Array<gotModel>>(
     actionTypes['Got@load'].toLocaleString()
 );
-export const addGotActions = createAction(
+
+export const addGotAction = createAction<gotModel>(
     actionTypes['Got@add'].toLocaleString()
 );
-export const updateGotActions = createAction(
+
+export const updateGotAction = createAction<gotModel>(
     actionTypes['Got@update'].toLocaleString()
 );
-export const deleteGotActions = createAction(
+
+export const deleteGotAction = createAction<gotModel>(
     actionTypes['Got@delete'].toLocaleString()
 );
