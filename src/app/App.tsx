@@ -1,10 +1,14 @@
 import React from 'react';
+import { ListGot } from '../components/list';
 
 import './App.css';
 
 function App() {
-    return <></>;
+    return (
+        <>
+            <ListGot></ListGot>
+        </>
+    );
 }
 
 export default App;
-
