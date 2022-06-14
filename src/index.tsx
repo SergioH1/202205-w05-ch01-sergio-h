@@ -4,16 +4,13 @@ import { createRoot } from 'react-dom/client';
 import App from './app/App';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
-import { configureStore } from '@reduxjs/toolkit';
-import { gotReducer } from './reducer/got-reducer';
+
 import { Provider } from 'react-redux';
+import { store } from './store/store';
 
 const container = document.getElementById('root')!;
 const root = createRoot(container);
 
-const store = configureStore({
-    reducer: gotReducer,
-});
 root.render(
     <React.StrictMode>
         <Provider store={store}>

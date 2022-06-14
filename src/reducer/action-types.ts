@@ -1,6 +1,6 @@
 export enum actionTypes {
-    'Got@add' = 0,
-    'Got@delete' = 1,
-    'Got@update' = 2,
-    'Got@load' = 3,
+    'Got@add' = 'Got@add',
+    'Got@delete' = 'Got@delete',
+    'Got@update' = 'Got@update',
+    'Got@load' = 'Got@load',
 }
